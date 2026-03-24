@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Jan Kowalski — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="theme-light lang-pl">
+
+  <!-- ── CONTROLS ───────────────────────────────────────────────── -->
+  <div class="controls" aria-label="Opcje strony">
+    <button class="ctrl-btn" id="themeToggle" title="Zmień motyw">
+      <span class="theme-icon">◐</span>
+    </button>
+    <button class="ctrl-btn lang-btn active" data-lang="pl" id="btnPl">PL</button>
+    <span class="ctrl-sep">|</span>
+    <button class="ctrl-btn lang-btn" data-lang="en" id="btnEn">EN</button>
+  </div>
+
+  <!-- ── HEADER / HERO ─────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="header-inner">
+
+      <div class="photo-frame">
+        <!-- Zamień src na własne zdjęcie, np. images/photo.jpg -->
+        <img
+          src="images/photo.jpg"
+          alt="Zdjęcie portretowe"
+          class="portrait"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+        <div class="portrait-placeholder">
+          <span>FOTO</span>
+        </div>
+      </div>
+
+      <div class="header-text">
+        <p class="pre-title" data-pl="Doktor habilitowany · Językoznawstwo" data-en="Associate Professor · Linguistics">
+          Doktor habilitowany · Językoznawstwo
+        </p>
+        <h1 class="name">Jan<br /><em>Kowalski</em></h1>
+        <p class="affiliation" data-pl="Instytut Filologii Polskiej · Uniwersytet Jagielloński" data-en="Institute of Polish Philology · Jagiellonian University">
+          Instytut Filologii Polskiej · Uniwersytet Jagielloński
+        </p>
+        <div class="header-links">
+          <a href="mailto:jan.kowalski@uj.edu.pl" class="text-link">jan.kowalski@uj.edu.pl</a>
+          <a href="https://orcid.org/0000-0000-0000-0000" class="text-link" target="_blank">ORCID</a>
+          <a href="https://scholar.google.com" class="text-link" target="_blank">Google Scholar</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="header-rule"></div>
+  </header>
+
+  <!-- ── NAV ───────────────────────────────────────────────────── -->
+  <nav class="site-nav" aria-label="Nawigacja">
+    <ul>
+      <li><a href="#about"       data-pl="O mnie"        data-en="About">O mnie</a></li>
+      <li><a href="#research"    data-pl="Badania"        data-en="Research">Badania</a></li>
+      <li><a href="#publications"data-pl="Publikacje"     data-en="Publications">Publikacje</a></li>
+      <li><a href="#teaching"    data-pl="Dydaktyka"      data-en="Teaching">Dydaktyka</a></li>
+      <li><a href="#gallery"     data-pl="Galeria"        data-en="Gallery">Galeria</a></li>
+      <li>
+        <a href="#contact" class="nav-cta" data-pl="Skontaktuj się ze mną" data-en="Contact me">
+          Skontaktuj się ze mną
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ── MAIN ──────────────────────────────────────────────────── -->
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-label" data-pl="01 — O mnie" data-en="01 — About">01 — O mnie</div>
+      <div class="section-body two-col">
+        <div class="col-text">
+          <h2 data-pl="Profil naukowy" data-en="Academic Profile">Profil naukowy</h2>
+          <p data-pl="Zajmuję się językoznawstwem kognitywnym i semantyką leksykalną. Moje badania koncentrują się na związkach między językiem, myśleniem a kulturą — ze szczególnym uwzględnieniem metafory pojęciowej i frazeologii. Prowadzę badania porównawcze obejmujące języki słowiańskie i germańskie."
+             data-en="I work on cognitive linguistics and lexical semantics. My research focuses on the relationships between language, thought and culture — with particular emphasis on conceptual metaphor and phraseology. I conduct comparative research covering Slavic and Germanic languages.">
+            Zajmuję się językoznawstwem kognitywnym i semantyką leksykalną. Moje badania koncentrują się na związkach między językiem, myśleniem a kulturą — ze szczególnym uwzględnieniem metafory pojęciowej i frazeologii. Prowadzę badania porównawcze obejmujące języki słowiańskie i germańskie.
+          </p>
+        </div>
+        <div class="col-facts">
+          <div class="fact">
+            <span class="fact-num">18+</span>
+            <span class="fact-label" data-pl="lat doświadczenia" data-en="years of experience">lat doświadczenia</span>
+          </div>
+          <div class="fact">
+            <span class="fact-num">72</span>
+            <span class="fact-label" data-pl="publikacje" data-en="publications">publikacje</span>
+          </div>
+          <div class="fact">
+            <span class="fact-num">6</span>
+            <span class="fact-label" data-pl="granty NCN / NCBiR" data-en="NCN / NCBiR grants">granty NCN / NCBiR</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="section section-alt">
+      <div class="section-label" data-pl="02 — Badania" data-en="02 — Research">02 — Badania</div>
+      <div class="section-body">
+        <h2 data-pl="Obszary badawcze" data-en="Research Areas">Obszary badawcze</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="card-icon">❧</div>
+            <h3 data-pl="Semantyka kognitywna" data-en="Cognitive Semantics">Semantyka kognitywna</h3>
+            <p data-pl="Metafora pojęciowa, metonimia i ramy semantyczne w językach naturalnych." data-en="Conceptual metaphor, metonymy and semantic frames in natural languages.">
+              Metafora pojęciowa, metonimia i ramy semantyczne w językach naturalnych.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">✦</div>
+            <h3 data-pl="Frazeologia porównawcza" data-en="Comparative Phraseology">Frazeologia porównawcza</h3>
+            <p data-pl="Analiza związków frazeologicznych w perspektywie międzyjęzykowej i kulturowej." data-en="Analysis of phraseological units from a cross-linguistic and cultural perspective.">
+              Analiza związków frazeologicznych w perspektywie międzyjęzykowej i kulturowej.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">◈</div>
+            <h3 data-pl="Lingwistyka korpusowa" data-en="Corpus Linguistics">Lingwistyka korpusowa</h3>
+            <p data-pl="Metody ilościowe i jakościowe w badaniu dużych zbiorów tekstowych." data-en="Quantitative and qualitative methods in the study of large text corpora.">
+              Metody ilościowe i jakościowe w badaniu dużych zbiorów tekstowych.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="section">
+      <div class="section-label" data-pl="03 — Publikacje" data-en="03 — Publications">03 — Publikacje</div>
+      <div class="section-body">
+        <h2 data-pl="Wybrane publikacje" data-en="Selected Publications">Wybrane publikacje</h2>
+        <ol class="pub-list">
+          <li class="pub-item">
+            <span class="pub-year">2024</span>
+            <div class="pub-info">
+              <span class="pub-title">Metafora czasu w językach słowiańskich</span>
+              <span class="pub-venue">Język Polski, 104(2), 45–68.</span>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-year">2023</span>
+            <div class="pub-info">
+              <span class="pub-title">Cognitive Frames and Cultural Scripts</span>
+              <span class="pub-venue">Journal of Linguistics, 59(1), 112–139.</span>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-year">2022</span>
+            <div class="pub-info">
+              <span class="pub-title">Frazeologia polska wobec wyzwań XXI wieku</span>
+              <span class="pub-venue">Towarzystwo Miłośników Języka Polskiego, Kraków.</span>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-year">2021</span>
+            <div class="pub-info">
+              <span class="pub-title">Embodied Cognition in Slavic Languages</span>
+              <span class="pub-venue">Cognitive Linguistics, 32(4), 789–815.</span>
+            </div>
+          </li>
+        </ol>
+        <a href="publications.html" class="btn-outline" data-pl="Zobacz wszystkie →" data-en="See all →">Zobacz wszystkie →</a>
+      </div>
+    </section>
+
+    <!-- TEACHING -->
+    <section id="teaching" class="section section-alt">
+      <div class="section-label" data-pl="04 — Dydaktyka" data-en="04 — Teaching">04 — Dydaktyka</div>
+      <div class="section-body">
+        <h2 data-pl="Prowadzone zajęcia" data-en="Courses Taught">Prowadzone zajęcia</h2>
+        <div class="teaching-grid">
+          <div class="teaching-item">
+            <span class="level" data-pl="Studia licencjackie" data-en="Bachelor's">Studia licencjackie</span>
+            <ul>
+              <li data-pl="Wstęp do językoznawstwa" data-en="Introduction to Linguistics">Wstęp do językoznawstwa</li>
+              <li data-pl="Semantyka i pragmatyka" data-en="Semantics and Pragmatics">Semantyka i pragmatyka</li>
+            </ul>
+          </div>
+          <div class="teaching-item">
+            <span class="level" data-pl="Studia magisterskie" data-en="Master's">Studia magisterskie</span>
+            <ul>
+              <li data-pl="Lingwistyka kognitywna" data-en="Cognitive Linguistics">Lingwistyka kognitywna</li>
+              <li data-pl="Metody badań korpusowych" data-en="Corpus Research Methods">Metody badań korpusowych</li>
+            </ul>
+          </div>
+          <div class="teaching-item">
+            <span class="level" data-pl="Seminarium doktorskie" data-en="Doctoral Seminar">Seminarium doktorskie</span>
+            <ul>
+              <li data-pl="Seminarium językoznawcze" data-en="Linguistics Seminar">Seminarium językoznawcze</li>
+              <li data-pl="Metodologia badań" data-en="Research Methodology">Metodologia badań</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="section-label" data-pl="05 — Galeria" data-en="05 — Gallery">05 — Galeria</div>
+      <div class="section-body">
+        <h2 data-pl="Zdjęcia" data-en="Photos">Zdjęcia</h2>
+        <p class="gallery-hint" data-pl="Dodaj własne zdjęcia do folderu images/ i uzupełnij poniższe ścieżki." data-en="Add your images to the images/ folder and update the paths below.">
+          Dodaj własne zdjęcia do folderu images/ i uzupełnij poniższe ścieżki.
+        </p>
+
+        <!-- ════════════════════════════════════════════════
+             GALERIA — DODAWANIE ZDJĘĆ
+             ================================================
+             Skopiuj blok <figure> i wklej kolejny,
+             zmieniając src oraz <figcaption>.
+             Pliki umieszczaj w folderze images/
+             ════════════════════════════════════════════════ -->
+        <div class="gallery-grid">
+
+          <figure class="gallery-item">
+            <img src="images/gallery-1.jpg" alt="Konferencja 2024" loading="lazy"
+                 onerror="this.parentElement.classList.add('img-missing')" />
+            <figcaption data-pl="Konferencja PLJ, Warszawa 2024" data-en="PLJ Conference, Warsaw 2024">
+              Konferencja PLJ, Warszawa 2024
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="images/gallery-2.jpg" alt="Wykład otwarty" loading="lazy"
+                 onerror="this.parentElement.classList.add('img-missing')" />
+            <figcaption data-pl="Wykład otwarty, UJ 2023" data-en="Open Lecture, UJ 2023">
+              Wykład otwarty, UJ 2023
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="images/gallery-3.jpg" alt="Badania terenowe" loading="lazy"
+                 onerror="this.parentElement.classList.add('img-missing')" />
+            <figcaption data-pl="Badania terenowe, 2022" data-en="Field Research, 2022">
+              Badania terenowe, 2022
+            </figcaption>
+          </figure>
+
+          <!-- ↓ Dodaj kolejne zdjęcia tutaj ↓ -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <div class="section-label" data-pl="06 — Kontakt" data-en="06 — Contact">06 — Kontakt</div>
+      <div class="section-body contact-body">
+        <h2 class="contact-heading" data-pl="Skontaktuj się ze mną" data-en="Contact me">
+          Skontaktuj się ze mną
+        </h2>
+        <p data-pl="Chętnie odpowiem na pytania dotyczące współpracy naukowej, recenzji, zaproszeń do udziału w konferencjach oraz propozycji promotorstwa."
+           data-en="I am happy to answer questions regarding academic collaboration, peer review, conference invitations, and supervision proposals.">
+          Chętnie odpowiem na pytania dotyczące współpracy naukowej, recenzji, zaproszeń do udziału w konferencjach oraz propozycji promotorstwa.
+        </p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name" data-pl="Imię i nazwisko" data-en="Full name">Imię i nazwisko</label>
+            <input type="text" id="name" name="name" required autocomplete="name" />
+          </div>
+          <div class="form-row">
+            <label for="email" data-pl="Adres e-mail" data-en="E-mail address">Adres e-mail</label>
+            <input type="email" id="email" name="email" required autocomplete="email" />
+          </div>
+          <div class="form-row">
+            <label for="subject" data-pl="Temat" data-en="Subject">Temat</label>
+            <input type="text" id="subject" name="subject" />
+          </div>
+          <div class="form-row">
+            <label for="message" data-pl="Wiadomość" data-en="Message">Wiadomość</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit" data-pl="Wyślij wiadomość" data-en="Send message">
+            Wyślij wiadomość
+          </button>
+          <p class="form-note" data-pl="Formularz otwiera klienta pocztowego. Możesz też napisać bezpośrednio na jan.kowalski@uj.edu.pl"
+             data-en="The form opens your mail client. You may also write directly to jan.kowalski@uj.edu.pl">
+            Formularz otwiera klienta pocztowego. Możesz też napisać bezpośrednio na jan.kowalski@uj.edu.pl
+          </p>
+        </form>
+
+        <div class="contact-details">
+          <div class="contact-block">
+            <span class="contact-label" data-pl="Adres" data-en="Address">Adres</span>
+            <address>
+              Instytut Filologii Polskiej<br />
+              ul. Gołębia 20, pok. 214<br />
+              31-007 Kraków
+            </address>
+          </div>
+          <div class="contact-block">
+            <span class="contact-label" data-pl="Godziny przyjęć" data-en="Office Hours">Godziny przyjęć</span>
+            <p data-pl="Środa 11:00–13:00<br />lub po wcześniejszym umówieniu" data-en="Wednesday 11:00–13:00<br />or by appointment">
+              Środa 11:00–13:00<br />lub po wcześniejszym umówieniu
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <p>
+      <span data-pl="© 2025 Jan Kowalski. Wszelkie prawa zastrzeżone." data-en="© 2025 Jan Kowalski. All rights reserved.">
+        © 2025 Jan Kowalski. Wszelkie prawa zastrzeżone.
+      </span>
+    </p>
+    <p class="footer-sub">
+      <a href="https://github.com/jankowalski" target="_blank">GitHub</a>
+      <a href="https://orcid.org/0000-0000-0000-0000" target="_blank">ORCID</a>
+      <a href="https://scholar.google.com" target="_blank">Scholar</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
