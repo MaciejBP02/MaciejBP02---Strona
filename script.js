@@ -66,8 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* Zaktualizuj <title> strony */
     document.title = lang === 'pl'
-      ? 'Dr. Jan Kowalski — Portfolio Naukowe'
-      : 'Dr. Jan Kowalski — Academic Portfolio';
+      ? 'MP — Portfolio'
+      : 'MP — Academic Portfolio';
 
     /* Zaktualizuj placeholder przycisku wysyłki */
     const submitBtn = document.querySelector('.btn-submit');
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      const recipient = 'jan.kowalski@uj.edu.pl';   /* ← zmień na swój adres */
+      const recipient = 'imię.nazwisko@student.uj.edu.pl';   /* ← zmień na swój adres */
       const body_text = `Imię / Name: ${name}\nE-mail: ${email}\n\n${message}`;
       const mailto = `mailto:${recipient}`
         + `?subject=${encodeURIComponent(subject || 'Wiadomość ze strony / Message from website')}`
