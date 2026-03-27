@@ -18,17 +18,17 @@ body {
 
 /* ── THEME: LIGHT (krem / granat) ────────────────────────────── */
 body.theme-light {
-  --bg:           #F5EFE6;
-  --bg-alt:       #2e2a22;
-  --text:         #1c1c1e;
-  --text-muted:   #7a6a4f;
-  --accent:       #8b6514;
-  --accent-soft:  #b5892e;
-  --gold:         #c9a84c;
-  --border:       rgba(139, 101, 20, 0.18);
-  --card-bg:      rgba(255, 248, 232, 0.65);
-  --shadow:       0 2px 24px rgba(139, 101, 20, 0.10);
-  --nav-bg:       rgba(245, 239, 230, 0.93);
+  --bg:           #F7F0E6;
+  --bg-alt:       #EDE3D4;
+  --text:         #2B1F12;
+  --text-muted:   #6B5440;
+  --accent:       #7A3B1E;
+  --accent-soft:  #C47A3A;
+  --gold:         #C9964A;
+  --border:       rgba(122, 59, 30, 0.15);
+  --card-bg:      rgba(255, 248, 238, 0.70);
+  --shadow:       0 2px 24px rgba(122, 59, 30, 0.10);
+  --nav-bg:       rgba(247, 240, 230, 0.95);
 }
 
 /* ── THEME: DARK (grafit / złoto) ────────────────────────────── */
